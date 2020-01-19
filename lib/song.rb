@@ -31,6 +31,6 @@ class Song
     self.find_by_name(song_name) || self.create_by_name(song_name)
   end
   def self.alphabetical 
-    self.all.sort_by { |so| word.length }
+    self.all.sort_by { |song| song.length }
 end 
 
